@@ -1,0 +1,135 @@
+.seat {
+  width: 15px;
+  height: 15px;
+  margin: 4.5px;
+  border-radius: 13px;
+}
+/*---------------*/
+.table1 {
+  width: 40px;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 11px;
+}
+.addcolumn-seat{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.made-seat1{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 33.33%;
+}
+/*---------------*/
+.table2{
+  width: 75px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 11px;
+}
+.addrow-seat{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.made-seat2{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 33.33%;
+}
+/*---------------*/
+.table3 {
+  width: 25px;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 11px;
+}
+.made-seat3{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 33.33%;
+  justify-content: flex-start; /* 왼쪽 정렬 */
+}
+/*---------------*/
+.table4 {
+  width: 25px;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 11px;
+}
+.made-seat4{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 33.33%;
+  justify-content: flex-end; /* 오른쪽 정렬 */
+}
+/*---------------*/
+.table5{
+  width: 75px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 11px;
+}
+.made-seat5{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 33.33%;
+}
+/*---------------*/
+.table6{
+  width: 75px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 11px;
+}
+.made-seat6{
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 33.33%;
+}
+/*---------------*/
+.electric{
+  margin-right: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+.elec{
+  font-size: 13px;
+}
