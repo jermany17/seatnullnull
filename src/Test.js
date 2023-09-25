@@ -3,7 +3,7 @@ import axios from 'axios';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 
 const CustomTooltip = ({ active, payload, label }) => {
-  // CustomTooltip은 Recharts에서 제공하는 함수형 컴포넌트이다
+  // CustomTooltip은 Recharts에서 제공하는 함수형 컴포넌트이다!!!!!!!!
   if (active && payload && payload.length) {
     // active 값이 ture이면 마우스를 올린 것
     // patload에는 데이터들이 들어간다
