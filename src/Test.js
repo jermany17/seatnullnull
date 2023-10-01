@@ -26,6 +26,12 @@ const Test = () => {
     // 서버 주소 설정
     const serverUrl = 'http://www.seatnullnull.com/api/pre';
     const serverUrl2 = 'http://www.seatnullnull.com/api/past';
+    var webSocket = new WebSocket("ws://seatnullnull.com/ws/data");
+
+    webSocket.onmessage = function(message){
+       console.log(message.data);
+     };
+
 
     // Axios를 사용하여 GET 요청 보내기
     axios.get(serverUrl)
