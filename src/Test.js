@@ -22,16 +22,23 @@ const CustomTooltip = ({ active, payload, label }) => {
 const Test = () => {
   const [todaydata, settodayData] = useState(null); // 초기에는 data를 null로 초기화
   const [pastdata, setpastData] = useState(null); // 초기에는 data를 null로 초기화
+  const [webSocket, setWebSocket] = useState(null); //
+  const [message, setMessage] = useState('');       //
+  
   useEffect(() => {
     // 서버 주소 설정
     const serverUrl = 'http://www.seatnullnull.com/api/pre';
     const serverUrl2 = 'http://www.seatnullnull.com/api/past';
-    var webSocket = new WebSocket("ws://seatnullnull.com/ws/data");
-
+    const webSocket = new WebSocket("ws://seatnullnull.com/ws/data");
+    
+    // 웹 소켓 연결이 열릴 때 실행할 함수
+    webSocket.onopen = () => {
+      console.log('웹 소켓 연결이 열렸습니다.');
+    };
     webSocket.onmessage = function(message){
-       console.log(message.data);
-     };
-
+       setMessage(message.data);
+    };
+    setWebSocket(webSocket);
 
     // Axios를 사용하여 GET 요청 보내기
     axios.get(serverUrl)
@@ -70,6 +77,7 @@ const Test = () => {
         <div>
           <h3>서버에서 받은 데이터:</h3>
           <p>오늘의 날짜: {formattedDate}</p>
+          <p>소켓 데이터: {message}</p>
           <pre>{JSON.stringify(todaydata, null, 1)}</pre>
           <pre>{JSON.stringify(pastdata, null, 1)}</pre>
           {/* 첫번째 인수는 데이터, 
@@ -86,17 +94,6 @@ const Test = () => {
               <Bar dataKey="preSaturation" name="포화도" fill="rgb(235, 216, 11)" />
             </BarChart>
         </ResponsiveContainer>
-        <label>
-          <select name="selectedFruit">
-            <option value="1Day">1일 전</option>
-            <option value="2Day">2일 전</option>
-            <option value="3Day">3일 전</option>
-            <option value="4Day">4일 전</option>
-            <option value="5Day">5일 전</option>
-            <option value="6Day">6일 전</option>
-            <option value="6Day">7일 전</option>
-          </select>
-        </label>
       </div>
     </div>
   );
