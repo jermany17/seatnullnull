@@ -11,8 +11,8 @@ const SeatMap = () => {
     { id: 7, isOccupied: 1 },
     { id: 8, isOccupied: 1 },
     { id: 9, isOccupied: 0 },
-    { id: 10, isOccupied: 0 },
-    { id: 11, isOccupied: 0 },
+    { id: 10, isOccupied: 1 },
+    { id: 11, isOccupied: 1 },
     { id: 12, isOccupied: 0 },
     // 추가적인 좌석 정보...
   ]);
@@ -23,11 +23,9 @@ const SeatMap = () => {
           <div  className="addcolumn-seat">      
             <div className="seat" style={{backgroundColor: seats.find((seat) => seat.id === a)?.isOccupied ? 'rgb(200, 2, 2)' : 'rgb(235, 216, 11)',}}></div>
             <div className="seat" style={{backgroundColor: seats.find((seat) => seat.id === a)?.isOccupied ? 'rgb(200, 2, 2)' : 'rgb(235, 216, 11)',}}></div>
-            <div className="seat" style={{backgroundColor: seats.find((seat) => seat.id === a)?.isOccupied ? 'rgb(200, 2, 2)' : 'rgb(235, 216, 11)',}}></div>
           </div>
           <div className="table1" style={{backgroundColor: seats.find((seat) => seat.id === a)?.isOccupied ? 'rgb(200, 2, 2)' : 'rgb(235, 216, 11)',}}>{b}/{c}</div>
           <div  className="addcolumn-seat">  
-            <div className="seat" style={{backgroundColor: seats.find((seat) => seat.id === a)?.isOccupied ? 'rgb(200, 2, 2)' : 'rgb(235, 216, 11)',}}></div>
             <div className="seat" style={{backgroundColor: seats.find((seat) => seat.id === a)?.isOccupied ? 'rgb(200, 2, 2)' : 'rgb(235, 216, 11)',}}></div>
             <div className="seat" style={{backgroundColor: seats.find((seat) => seat.id === a)?.isOccupied ? 'rgb(200, 2, 2)' : 'rgb(235, 216, 11)',}}></div>
           </div>
@@ -51,6 +49,7 @@ const SeatMap = () => {
        </div>
     );
   };
+   /*
   const madeseat3 = (a,b,c) => {  // 왼쪽 벽 좌석
     return (
       <div className="made-seat3">
@@ -63,6 +62,8 @@ const SeatMap = () => {
       </div>
     );
   };
+   */
+   /*
   const madeseat4 = (a,b,c) => {  // 오른쪽 벽 좌석 
     return (
     <div className="made-seat4">
@@ -75,7 +76,8 @@ const SeatMap = () => {
       </div>
     );
   };
-
+  */
+ /*
   const madeseat5 = (a,b,c) => {  // 아래 벽 좌석
     return (
       <div className="made-seat5">
@@ -88,7 +90,9 @@ const SeatMap = () => {
       </div>
     );
   };
-  const madeseat6 = (a,b,c) => { 
+  */
+  /*
+  const madeseat6 = (a,b,c) => {  // 위 벽 좌석
     return (
       <div className="made-seat6">
         <div className="table6" style={{backgroundColor: seats.find((seat) => seat.id === a)?.isOccupied ? 'rgb(200, 2, 2)' : 'rgb(235, 216, 11)',}}>{b}/{c}</div>
@@ -100,38 +104,55 @@ const SeatMap = () => {
       </div>
     );
   };
+  */
 
   
 return (
   <div>
     <div className="seat-container">
       <div className="seat-container-row">
-        {madeseat6(1,0,0)}
-        {madeseat6(2,2,3)}
-        {madeseat6(3,1,3)}
+        <div className="white_nextto12"></div>
+        <div className="gray_nextto12"><div className="g_n_12"></div><div className="g_n_12_2"></div></div>
+        <div className="white_nextto12_2"></div>
+        {madeseat2(9,0,12)}
+        {madeseat2(10,6,12)}
+        <div className="white_nextto12_2"></div>
+        <div className="rightlongseat"></div>
       </div>
       <div className="electric">
         <span class="material-symbols-outlined power elec">electrical_services</span>
-        <span class="material-symbols-outlined power elec">electrical_services</span>
+        <div className="rightlongseat"></div>
       </div>
       <div className="seat-container-row">
+        {madeseat1(1,0,6)}
+        {madeseat1(2,1,6)}
+        {madeseat1(3,2,6)}
         {madeseat1(4,0,6)}
-        {madeseat1(5,0,6)}
+        <div className="rightlongseat"></div>
+      </div>
+      <div className="gray_center">
+        <div className="gray_center_left"></div>
+        <div className="gray_center_right"></div>
+      </div>
+      <div className="seat-container-row">
+        {madeseat1(5,3,6)}
         {madeseat1(6,0,6)}
+        {madeseat1(7,4,6)}
+        {madeseat1(8,5,6)}
+        <div className="rightlongseat"></div>
       </div>
       <div className="electric">
         <span class="material-symbols-outlined power elec">electrical_services</span>
-        <span class="material-symbols-outlined power elec">electrical_services</span>
+        <div className="rightlongseat"></div>
       </div>
       <div className="seat-container-row">
-        {madeseat3(7,3,3)}
-        {madeseat2(8,4,6)}
-        {madeseat4(9,0,6)}
-      </div>
-      <div className="seat-container-row">
-        {madeseat5(10,0,0)}
-        {madeseat5(11,0,0)}
-        {madeseat5(12,0,0)}
+        <div className="white_nextto12"></div>
+        <div className="gray_nextto12"><div className="g_n_12"></div><div className="g_n_12_2"></div></div>
+        <div className="white_nextto12_2"></div>
+        {madeseat2(11,4,12)}
+        {madeseat2(12,0,12)}
+        <div className="white_nextto12_2"></div>
+        <div className="rightlongseat"></div>
       </div>
     </div>
   </div>

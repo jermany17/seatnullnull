@@ -55,6 +55,8 @@
 .seat-container-row{
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  height: 100px;
 }
 .window{
   margin-bottom: 2%;
