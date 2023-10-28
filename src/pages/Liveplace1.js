@@ -17,9 +17,7 @@ const Liveplace1 = () => {
         </div>
         <div className="place-container2">
           <div className="map-scroll-con">
-            <div className="window">창문<span class="material-symbols-outlined window-door-icon">cards</span></div>
             <SeatMap/>
-            <div className="door"><div className="door2">입구<span class="material-symbols-outlined window-door-icon">door_sliding</span></div></div>
           </div>
         </div>
         <div className="footer">

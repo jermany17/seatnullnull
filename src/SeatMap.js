@@ -130,9 +130,12 @@ return (
         {madeseat1(4,0,6)}
         <div className="rightlongseat"></div>
       </div>
-      <div className="gray_center">
-        <div className="gray_center_left"></div>
-        <div className="gray_center_right"></div>
+      <div className="seat-container-row2">
+        <div className="gray_center">
+          <div className="gray_center_left"></div>
+          <div className="gray_center_right"></div>
+        </div>
+        <div className="rightlongseat"></div>
       </div>
       <div className="seat-container-row">
         {madeseat1(5,3,6)}
@@ -154,6 +157,7 @@ return (
         <div className="white_nextto12_2"></div>
         <div className="rightlongseat"></div>
       </div>
+      <div className="bottom-gray"></div>
     </div>
   </div>
 );
