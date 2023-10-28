@@ -119,10 +119,6 @@ return (
         <div className="white_nextto12_2"></div>
         <div className="rightlongseat"></div>
       </div>
-      <div className="electric">
-        <span class="material-symbols-outlined power elec">electrical_services</span>
-        <div className="rightlongseat"></div>
-      </div>
       <div className="seat-container-row">
         {madeseat1(1,0,6)}
         {madeseat1(2,1,6)}
@@ -132,8 +128,67 @@ return (
       </div>
       <div className="seat-container-row2">
         <div className="gray_center">
-          <div className="gray_center_left"></div>
-          <div className="gray_center_right"></div>
+          <div className="gray_center_left">
+            <div className="gray_center_left1">
+               <div className="gcl1">
+                <div className="gcl1-1"></div>
+               </div>
+               <div className="gcl23">
+                <div className="gcl2">
+                  <div className="gcl2-1"></div>
+                </div>
+                <div className="gcl3">
+                  <div className="gcl3-1"></div>
+                </div>
+               </div>
+            </div>
+            <div className="gray_center_left1">
+            <div className="gcl1">
+                <div className="gcl1-1"></div>
+               </div>
+               <div className="gcl23">
+                <div className="gcl2">
+                  <div className="gcl2-1"></div>
+                </div>
+                <div className="gcl3">
+                  <div className="gcl3-1"></div>
+                </div>
+               </div>
+            </div>
+          </div>
+          <div className="gray_center_right">
+            <div className="gray_center_right1">
+              <div className="gcr1">
+                <div className="gcr1-1"></div>
+                <div className="gcr1-1"></div>
+              </div>
+              <div className="gcr1">
+                <div className="gcr1-1"></div>
+                <div className="gcr1-1"></div>
+              </div>
+              <div className="gcr1">
+                <div className="gcr1-1"></div>
+                <div className="gcr1-1"></div>
+              </div>
+            </div>
+            <div className="gray_center_right2">
+              <div className="gcr2"></div>
+            </div>
+            <div className="gray_center_right1">
+              <div className="gcr1">
+                <div className="gcr1-1"></div>
+                <div className="gcr1-1"></div>
+              </div>
+              <div className="gcr1">
+                <div className="gcr1-1"></div>
+                <div className="gcr1-1"></div>
+              </div>
+              <div className="gcr1">
+                <div className="gcr1-1"></div>
+                <div className="gcr1-1"></div>
+              </div>
+            </div>
+          </div>
         </div>
         <div className="rightlongseat"></div>
       </div>
@@ -144,10 +199,6 @@ return (
         {madeseat1(8,5,6)}
         <div className="rightlongseat"></div>
       </div>
-      <div className="electric">
-        <span class="material-symbols-outlined power elec">electrical_services</span>
-        <div className="rightlongseat"></div>
-      </div>
       <div className="seat-container-row">
         <div className="white_nextto12"></div>
         <div className="gray_nextto12"><div className="g_n_12"></div><div className="g_n_12_2"></div></div>
@@ -155,6 +206,10 @@ return (
         {madeseat2(11,4,12)}
         {madeseat2(12,0,12)}
         <div className="white_nextto12_2"></div>
+        <div className="rightlongseat"></div>
+      </div>
+      <div className="electric">
+        <span class="material-symbols-outlined power elec">electrical_services</span>
         <div className="rightlongseat"></div>
       </div>
       <div className="bottom-gray"></div>
