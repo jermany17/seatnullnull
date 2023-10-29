@@ -12,11 +12,11 @@ const Dataplace2 = () => {
       <Mainborder>
         <div className="header">
           <div className="header-left"><Link to="/data" className="header-logo-link"><img src={arrowback} alt="arrowback" className="header-logo" /></Link></div>
-          <div className="header-center">장소2!!!!!</div>
+          <div className="header-center">SAI 동아리방</div>
           <div className="header-right"><Link to="/" className="header-logo-link"><img src={home} alt="home" className="header-logo" /></Link></div>
         </div>
         <Test></Test>
-        <div className="copyright">ⓒseom-j</div>
+        <div className="copyright">ⓒseat-nullnull</div>
       </Mainborder>
     </div>
   )

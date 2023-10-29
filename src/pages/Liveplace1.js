@@ -12,7 +12,7 @@ const Liveplace1 = () => {
       <Mainborder>
         <div className="header">
           <div className="header-left"><Link to="/live" className="header-logo-link"> <img src={arrowback} alt="arrowback" className="header-logo" /></Link></div>
-          <div className="header-center">장소1</div>
+          <div className="header-center">학술정보원 창의토론라운지(4층)</div>
           <div className="header-right"><Link to="/" className="header-logo-link"> <img src={home} alt="home" className="header-logo" /></Link></div>
         </div>
         <div className="place-container2">

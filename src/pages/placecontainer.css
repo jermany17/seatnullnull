@@ -68,7 +68,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: black; 
+  color: black;
+  letter-spacing: 2px;
   white-space: nowrap; /* 텍스트의 줄바꿈을 방지*/
   overflow: hidden;    /* 텍스트가 넘칠 경우 텍스트를 생략 */
 }

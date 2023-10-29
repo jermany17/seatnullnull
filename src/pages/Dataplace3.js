@@ -11,13 +11,13 @@ const Dataplace3 = () => {
       <Mainborder>
         <div className="header">
           <div className="header-left"><Link to="/data" className="header-logo-link"><img src={arrowback} alt="arrowback" className="header-logo" /></Link></div>
-          <div className="header-center">장소3</div>
+          <div className="header-center"><span class="material-symbols-outlined">add</span></div>
           <div className="header-right"><Link to="/" className="header-logo-link"><img src={home} alt="home" className="header-logo" /></Link></div>
         </div>
         <div className="place-container3">
-          <h1 className="lastweek">장소3 좌석 포화도</h1>
+          <h1 className="lastweek">Comming Soon : D</h1>
         </div>
-        <div className="copyright">ⓒseom-j</div>
+        <div className="copyright">ⓒseat-nullnull</div>
       </Mainborder>
     </div>
   )

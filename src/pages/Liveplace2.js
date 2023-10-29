@@ -11,7 +11,7 @@ const Liveplace2 = () => {
       <Mainborder>
         <div className="header">
           <div className="header-left"><Link to="/live" className="header-logo-link"> <img src={arrowback} alt="arrowback" className="header-logo" /></Link></div>
-          <div className="header-center">장소2</div>
+          <div className="header-center">SAI 동아리방</div>
           <div className="header-right"><Link to="/" className="header-logo-link"> <img src={home} alt="home" className="header-logo" /></Link></div>
         </div>
         <div className="place-container2">
@@ -20,7 +20,7 @@ const Liveplace2 = () => {
         <div className="footer">
           다른 정보들(토론 가능 여부, 가용 좌석 표시, 불가용 좌석 표시)
         </div>
-        <div className="copyright">ⓒseom-j</div>
+        <div className="copyright">ⓒseat-nullnull</div>
       </Mainborder>
     </div>
   )
