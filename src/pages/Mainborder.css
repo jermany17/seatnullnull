@@ -57,11 +57,12 @@
   justify-content: center;
   height: 100px;
 }
-.seat-container-row2{
+.seat-container-gray{
   display: flex;
   flex-direction: row;
   justify-content: center;
-  height: 100px;
+  align-items: ceneter;
+  height: 55px;
 }
 .window{
   margin-bottom: 2%;

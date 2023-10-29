@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './SeatMap.css';
 const SeatMap = () => {
   const [seats] = useState([
+    { id: 0, isOccupied: 1 },
     { id: 1, isOccupied: 0 },
     { id: 2, isOccupied: 1 },
     { id: 3, isOccupied: 1 },
@@ -11,9 +12,8 @@ const SeatMap = () => {
     { id: 7, isOccupied: 1 },
     { id: 8, isOccupied: 1 },
     { id: 9, isOccupied: 0 },
-    { id: 10, isOccupied: 1 },
+    { id: 10, isOccupied: 0 },
     { id: 11, isOccupied: 1 },
-    { id: 12, isOccupied: 0 },
     // 추가적인 좌석 정보...
   ]);
 
@@ -114,97 +114,35 @@ return (
         <div className="white_nextto12"></div>
         <div className="gray_nextto12"><div className="g_n_12"></div><div className="g_n_12_2"></div></div>
         <div className="white_nextto12_2"></div>
-        {madeseat2(9,0,12)}
-        {madeseat2(10,6,12)}
+        {madeseat2(0,3,6)}
+        {madeseat2(1,0,6)}
         <div className="white_nextto12_2"></div>
         <div className="rightlongseat"></div>
       </div>
       <div className="seat-container-row">
-        {madeseat1(1,0,6)}
-        {madeseat1(2,1,6)}
-        {madeseat1(3,2,6)}
-        {madeseat1(4,0,6)}
+        {madeseat1(2,2,4)}
+        {madeseat1(3,1,4)}
+        {madeseat1(4,0,4)}
+        {madeseat1(5,3,4)}
         <div className="rightlongseat"></div>
       </div>
-      <div className="seat-container-row2">
-        <div className="gray_center">
-          <div className="gray_center_left">
-            <div className="gray_center_left1">
-               <div className="gcl1">
-                <div className="gcl1-1"></div>
-               </div>
-               <div className="gcl23">
-                <div className="gcl2">
-                  <div className="gcl2-1"></div>
-                </div>
-                <div className="gcl3">
-                  <div className="gcl3-1"></div>
-                </div>
-               </div>
-            </div>
-            <div className="gray_center_left1">
-            <div className="gcl1">
-                <div className="gcl1-1"></div>
-               </div>
-               <div className="gcl23">
-                <div className="gcl2">
-                  <div className="gcl2-1"></div>
-                </div>
-                <div className="gcl3">
-                  <div className="gcl3-1"></div>
-                </div>
-               </div>
-            </div>
-          </div>
-          <div className="gray_center_right">
-            <div className="gray_center_right1">
-              <div className="gcr1">
-                <div className="gcr1-1"></div>
-                <div className="gcr1-1"></div>
-              </div>
-              <div className="gcr1">
-                <div className="gcr1-1"></div>
-                <div className="gcr1-1"></div>
-              </div>
-              <div className="gcr1">
-                <div className="gcr1-1"></div>
-                <div className="gcr1-1"></div>
-              </div>
-            </div>
-            <div className="gray_center_right2">
-              <div className="gcr2"></div>
-            </div>
-            <div className="gray_center_right1">
-              <div className="gcr1">
-                <div className="gcr1-1"></div>
-                <div className="gcr1-1"></div>
-              </div>
-              <div className="gcr1">
-                <div className="gcr1-1"></div>
-                <div className="gcr1-1"></div>
-              </div>
-              <div className="gcr1">
-                <div className="gcr1-1"></div>
-                <div className="gcr1-1"></div>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div className="seat-container-gray">
+        <div className="all-space"><span>공용 공간</span></div>
         <div className="rightlongseat"></div>
       </div>
       <div className="seat-container-row">
-        {madeseat1(5,3,6)}
-        {madeseat1(6,0,6)}
-        {madeseat1(7,4,6)}
-        {madeseat1(8,5,6)}
+        {madeseat1(6,0,4)}
+        {madeseat1(7,3,4)}
+        {madeseat1(8,4,4)}
+        {madeseat1(9,0,4)}
         <div className="rightlongseat"></div>
       </div>
       <div className="seat-container-row">
         <div className="white_nextto12"></div>
         <div className="gray_nextto12"><div className="g_n_12"></div><div className="g_n_12_2"></div></div>
         <div className="white_nextto12_2"></div>
-        {madeseat2(11,4,12)}
-        {madeseat2(12,0,12)}
+        {madeseat2(10,0,6)}
+        {madeseat2(11,6,6)}
         <div className="white_nextto12_2"></div>
         <div className="rightlongseat"></div>
       </div>
