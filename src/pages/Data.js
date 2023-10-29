@@ -44,24 +44,6 @@ const Data = () => {
                <span class="material-symbols-outlined">add</span>
               </div>
             </Link>
-            <Link className="live-data-place">
-              <img src={yellowfolder} alt="yellowfolder" className="image-container-place" />
-              <div className='image-overlay'>
-               <span class="material-symbols-outlined">add</span>
-              </div>
-            </Link>
-            <Link className="live-data-place">
-              <img src={yellowfolder} alt="yellowfolder" className="image-container-place" />
-              <div className='image-overlay'>
-               <span class="material-symbols-outlined">add</span>
-              </div>
-            </Link>
-            <Link className="live-data-place">
-              <img src={yellowfolder} alt="yellowfolder" className="image-container-place" />
-              <div className='image-overlay'>
-               <span class="material-symbols-outlined">add</span>
-              </div>
-            </Link>
           </div>
         </div>
         <div className="copyright">ⓒseat-nullnull</div>
