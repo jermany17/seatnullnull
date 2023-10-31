@@ -2,49 +2,54 @@ import React, { useState } from 'react';
 import './SeatMap.css';
 const SeatMap = () => {
   const [seats] = useState([
-    { id: 0, isOccupied: 1 },
-    { id: 1, isOccupied: 0 },
-    { id: 2, isOccupied: 1 },
-    { id: 3, isOccupied: 1 },
-    { id: 4, isOccupied: 0 },
-    { id: 5, isOccupied: 1 },
-    { id: 6, isOccupied: 0 },
-    { id: 7, isOccupied: 1 },
-    { id: 8, isOccupied: 1 },
-    { id: 9, isOccupied: 0 },
-    { id: 10, isOccupied: 0 },
-    { id: 11, isOccupied: 1 },
-    // 추가적인 좌석 정보...
+    { id: 0, pp: 1, st: 0 },
+    { id: 1, pp: 0, st: 0 },
+    { id: 2, pp: 2, st: 0 },
+    { id: 3, pp: 3, st: 0 },
+    { id: 4, pp: 0, st: 0 },
+    { id: 5, pp: 4, st: 0 },
+    { id: 6, pp: 0, st: 0 },
+    { id: 7, pp: 2, st: 0 },
+    { id: 8, pp: 3, st: 0 },
+    { id: 9, pp: 0, st: 0 },
+    { id: 10, pp: 0, st: 0 },
+    { id: 11, pp: 6, st: 0 },
   ]);
 
-  const madeseat1 = (a,b,c) => {  //(좌석 테이블 좌석 가로로) 
+  const madeseat1 = (a, c) => {  //(좌석 테이블 좌석 가로로) 
+    const seat = seats.find((seat) => seat.id === a);
+    const Positive = seat?.pp > 0 || seat?.st > 0;
+    const tableBackgroundColor = Positive ? 'rgb(200, 2, 2)' : 'rgb(235, 216, 11)';
     return (
       <div className="made-seat1">
           <div  className="addcolumn-seat">      
-            <div className="seat" style={{backgroundColor: seats.find((seat) => seat.id === a)?.isOccupied ? 'rgb(200, 2, 2)' : 'rgb(235, 216, 11)',}}></div>
-            <div className="seat" style={{backgroundColor: seats.find((seat) => seat.id === a)?.isOccupied ? 'rgb(200, 2, 2)' : 'rgb(235, 216, 11)',}}></div>
+            <div className="seat" style={{backgroundColor: tableBackgroundColor }}></div>
+            <div className="seat" style={{backgroundColor: tableBackgroundColor }}></div>
           </div>
-          <div className="table1" style={{backgroundColor: seats.find((seat) => seat.id === a)?.isOccupied ? 'rgb(200, 2, 2)' : 'rgb(235, 216, 11)',}}>{b}/{c}</div>
+          <div className="table1" style={{backgroundColor: tableBackgroundColor }}>{seat?.pp}/{c}</div>
           <div  className="addcolumn-seat">  
-            <div className="seat" style={{backgroundColor: seats.find((seat) => seat.id === a)?.isOccupied ? 'rgb(200, 2, 2)' : 'rgb(235, 216, 11)',}}></div>
-            <div className="seat" style={{backgroundColor: seats.find((seat) => seat.id === a)?.isOccupied ? 'rgb(200, 2, 2)' : 'rgb(235, 216, 11)',}}></div>
+            <div className="seat" style={{backgroundColor: tableBackgroundColor }}></div>
+            <div className="seat" style={{backgroundColor: tableBackgroundColor }}></div>
           </div>
       </div>
     );
   };
-  const madeseat2 = (a,b,c) => {  //(좌석 테이블 좌석 세로로) 
+  const madeseat2 = (a, c) => {  //(좌석 테이블 좌석 세로로) 
+    const seat = seats.find((seat) => seat.id === a);
+    const Positive = seat?.pp > 0 || seat?.st > 0;
+    const tableBackgroundColor = Positive ? 'rgb(200, 2, 2)' : 'rgb(235, 216, 11)';
     return (
        <div className="made-seat2">
           <div  className="addrow-seat">      
-            <div className="seat" style={{backgroundColor: seats.find((seat) => seat.id === a)?.isOccupied ? 'rgb(200, 2, 2)' : 'rgb(235, 216, 11)',}}></div>
-            <div className="seat" style={{backgroundColor: seats.find((seat) => seat.id === a)?.isOccupied ? 'rgb(200, 2, 2)' : 'rgb(235, 216, 11)',}}></div>
-            <div className="seat" style={{backgroundColor: seats.find((seat) => seat.id === a)?.isOccupied ? 'rgb(200, 2, 2)' : 'rgb(235, 216, 11)',}}></div>
+            <div className="seat" style={{backgroundColor: tableBackgroundColor }}></div>
+            <div className="seat" style={{backgroundColor: tableBackgroundColor }}></div>
+            <div className="seat" style={{backgroundColor: tableBackgroundColor }}></div>
           </div>
-          <div className="table2" style={{backgroundColor: seats.find((seat) => seat.id === a)?.isOccupied ? 'rgb(200, 2, 2)' : 'rgb(235, 216, 11)',}}>{b}/{c}</div>
+          <div className="table2" style={{backgroundColor: tableBackgroundColor }}>{seat?.pp}/{c}</div>
           <div  className="addrow-seat">  
-            <div className="seat" style={{backgroundColor: seats.find((seat) => seat.id === a)?.isOccupied ? 'rgb(200, 2, 2)' : 'rgb(235, 216, 11)',}}></div>
-            <div className="seat" style={{backgroundColor: seats.find((seat) => seat.id === a)?.isOccupied ? 'rgb(200, 2, 2)' : 'rgb(235, 216, 11)',}}></div>
-            <div className="seat" style={{backgroundColor: seats.find((seat) => seat.id === a)?.isOccupied ? 'rgb(200, 2, 2)' : 'rgb(235, 216, 11)',}}></div>
+            <div className="seat" style={{backgroundColor: tableBackgroundColor }}></div>
+            <div className="seat" style={{backgroundColor: tableBackgroundColor }}></div>
+            <div className="seat" style={{backgroundColor: tableBackgroundColor }}></div>
           </div>
        </div>
     );
@@ -114,16 +119,16 @@ return (
         <div className="white_nextto12"></div>
         <div className="gray_nextto12"><div className="g_n_12"></div><div className="g_n_12_2"></div></div>
         <div className="white_nextto12_2"></div>
-        {madeseat2(0,3,6)}
-        {madeseat2(1,0,6)}
+        {madeseat2(0,6)}
+        {madeseat2(1,6)}
         <div className="white_nextto12_2"></div>
         <div className="rightlongseat"></div>
       </div>
       <div className="seat-container-row">
-        {madeseat1(2,2,4)}
-        {madeseat1(3,1,4)}
-        {madeseat1(4,0,4)}
-        {madeseat1(5,3,4)}
+        {madeseat1(2,4)}
+        {madeseat1(3,4)}
+        {madeseat1(4,4)}
+        {madeseat1(5,4)}
         <div className="rightlongseat"></div>
       </div>
       <div className="seat-container-gray">
@@ -131,18 +136,18 @@ return (
         <div className="rightlongseat"></div>
       </div>
       <div className="seat-container-row">
-        {madeseat1(6,0,4)}
-        {madeseat1(7,3,4)}
-        {madeseat1(8,4,4)}
-        {madeseat1(9,0,4)}
+        {madeseat1(6,4)}
+        {madeseat1(7,4)}
+        {madeseat1(8,4)}
+        {madeseat1(9,4)}
         <div className="rightlongseat"></div>
       </div>
       <div className="seat-container-row">
         <div className="white_nextto12"></div>
         <div className="gray_nextto12"><div className="g_n_12"></div><div className="g_n_12_2"></div></div>
         <div className="white_nextto12_2"></div>
-        {madeseat2(10,0,6)}
-        {madeseat2(11,6,6)}
+        {madeseat2(10,6)}
+        {madeseat2(11,6)}
         <div className="white_nextto12_2"></div>
         <div className="rightlongseat"></div>
       </div>

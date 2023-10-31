@@ -14,10 +14,8 @@ const Liveplace3 = () => {
           <div className="header-center"><span class="material-symbols-outlined">add</span></div>
           <div className="header-right"><Link to="/" className="header-logo-link"> <img src={home} alt="home" className="header-logo" /></Link></div>
         </div>
-        <div className="place-container2">
-          <h1>Comming Soon : D</h1>
-        </div>
-        <div className="footer">
+        <div className="place-container3">
+          <h1 className="lastweek">Comming Soon : D</h1>
         </div>
         <div className="copyright">ⓒseat-nullnull</div>
       </Mainborder>
