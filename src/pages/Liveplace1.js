@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react';
 import {Link} from "react-router-dom";
 import Mainborder from './Mainborder';
 import './Mainborder.css'
@@ -7,6 +7,30 @@ import arrowback from '../images/arrowback.PNG';
 import home from '../images/home.PNG';
 import SeatMap from '../SeatMap';
 const Liveplace1 = () => {
+  const [seats] = useState([
+    { id: 0, pp: 1, st: 0 },
+    { id: 1, pp: 0, st: 0 },
+    { id: 2, pp: 2, st: 0 },
+    { id: 3, pp: 3, st: 0 },
+    { id: 4, pp: 0, st: 0 },
+    { id: 5, pp: 4, st: 0 },
+    { id: 6, pp: 0, st: 0 },
+    { id: 7, pp: 2, st: 0 },
+    { id: 8, pp: 3, st: 0 },
+    { id: 9, pp: 0, st: 0 },
+    { id: 10, pp: 0, st: 0 },
+    { id: 11, pp: 6, st: 0 },
+  ]);
+
+  const positiveValues = [];
+
+  for (let i = 0; i <= 11; i++) {
+    const seat = seats.find((seat) => seat.id === i);
+    const positive = (seat?.pp > 0 || seat?.st > 0) ? 1 : 0;
+    positiveValues.push(positive);
+  }
+  const totalPositive = positiveValues.reduce((total, value) => total + value, 0);
+
   return (
     <div className="fullscreen">
       <Mainborder>
@@ -29,7 +53,7 @@ const Liveplace1 = () => {
            <div className="liveinfo2">
             <span className="seat-whe1"><div className="seat-whe2"></div>가용 테이블</span>
             <span className="seat-whe1"><div className="seat-whe3"></div>불가용 테이블</span>
-            <span className="seat-whe1">실시간 전체 포화도 : 7/12</span>
+            <span className="seat-whe1">실시간 전체 포화도 : {totalPositive}/12</span>
            </div>
         </div>
         <div className="copyright">ⓒseat-nullnull</div>

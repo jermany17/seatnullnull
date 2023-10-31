@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react';
 import {Link} from "react-router-dom";
 import Mainborder from './Mainborder';
 import './Mainborder.css'
@@ -7,6 +7,12 @@ import arrowback from '../images/arrowback.PNG';
 import home from '../images/home.PNG';
 import SeatMap2 from '../SeatMap2';
 const Liveplace2 = () => {
+  const [seats] = useState([
+    { id: 0, pp: 1, st: 1 },
+  ]);
+  const seat = seats.find((seat) => seat.id === 0);
+  const Positive = (seat?.pp > 0 || seat?.st > 0) ? 1 : 0;
+
   return (
     <div className="fullscreen">
       <Mainborder>
@@ -29,7 +35,7 @@ const Liveplace2 = () => {
            <div className="liveinfo2">
             <span className="seat-whe1"><div className="seat-whe2"></div>가용 테이블</span>
             <span className="seat-whe1"><div className="seat-whe3"></div>불가용 테이블</span>
-            <span className="seat-whe1">실시간 전체 포화도 : 1/1</span>
+            <span className="seat-whe1">실시간 전체 포화도 : {Positive}/1</span>
            </div>
         </div>
         <div className="copyright">ⓒseat-nullnull</div>
