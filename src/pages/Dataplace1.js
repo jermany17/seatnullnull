@@ -68,8 +68,8 @@ const Dataplace1 = () => {
   const [pastdata, setpastData] = useState(null); // 초기에는 data를 null로 초기화
   useEffect(() => {
     // 서버 주소 설정
-    const serverUrl = 'http://www.seatnullnull.com/api/pre';
-    const serverUrl2 = 'http://www.seatnullnull.com/api/past';
+    const serverUrl = 'http://www.seatnullnull.com:8080/api/pre';
+    const serverUrl2 = 'http://www.seatnullnull.com:8080/api/past';
 
     // Axios를 사용하여 GET 요청 보내기
     axios.get(serverUrl)

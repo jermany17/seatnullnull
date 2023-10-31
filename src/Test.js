@@ -27,8 +27,8 @@ const Test = () => {
   
   useEffect(() => {
     // 서버 주소 설정
-    const serverUrl = 'http://www.seatnullnull.com/api/pre';
-    const serverUrl2 = 'http://www.seatnullnull.com/api/past';
+    const serverUrl = 'http://www.seatnullnull.com:8080/api/pre';
+    const serverUrl2 = 'http://www.seatnullnull.com:8080/api/past';
     const webSocket = new WebSocket("ws://seatnullnull.com/ws/data");
     
     // 웹 소켓 연결이 열릴 때 실행할 함수
