@@ -5,6 +5,8 @@ import './Mainborder.css'
 import './placecontainer.css'
 import arrowback from '../images/arrowback.PNG';
 import home from '../images/home.PNG';
+import Test from '../Test';
+
 const Dataplace3 = () => {
   return (
     <div className="fullscreen">
@@ -14,13 +16,13 @@ const Dataplace3 = () => {
           <div className="header-center"><span class="material-symbols-outlined">add</span></div>
           <div className="header-right"><Link to="/" className="header-logo-link"><img src={home} alt="home" className="header-logo" /></Link></div>
         </div>
-        <div className="place-container3">
-          <h1 className="lastweek">Comming Soon : D</h1>
-        </div>
+        <Test></Test>
         <div className="copyright">ⓒseat-nullnull</div>
       </Mainborder>
     </div>
   )
 }
-
+/*<div className="place-container3">
+ <h1 className="lastweek">Comming Soon : D</h1>
+</div>*/
 export default Dataplace3
