@@ -5,6 +5,7 @@ import './Mainborder.css'
 import './placecontainer.css'
 import arrowback from '../images/arrowback.PNG';
 import home from '../images/home.PNG';
+import SeatMap2 from '../SeatMap2';
 const Liveplace2 = () => {
   return (
     <div className="fullscreen">
@@ -15,10 +16,21 @@ const Liveplace2 = () => {
           <div className="header-right"><Link to="/" className="header-logo-link"> <img src={home} alt="home" className="header-logo" /></Link></div>
         </div>
         <div className="place-container2">
-          <h1>장소2 좌석 여부</h1>
+          <div className="map-scroll-con">
+            <SeatMap2/>
+          </div>
         </div>
         <div className="footer">
-          다른 정보들(토론 가능 여부, 가용 좌석 표시, 불가용 좌석 표시)
+           <div className="liveinfo1">
+            <span>시간 : 10:00 ~ 21:00</span>
+            <span className="seat-whe1">토론 가능 여부 :<span class="material-symbols-outlined talking">circle</span></span>
+            <span className="seat-whe1">콘센트 위치 :<span class="material-symbols-outlined power">electrical_services</span></span>
+           </div>
+           <div className="liveinfo2">
+            <span className="seat-whe1"><div className="seat-whe2"></div>가용 테이블</span>
+            <span className="seat-whe1"><div className="seat-whe3"></div>불가용 테이블</span>
+            <span className="seat-whe1">실시간 전체 포화도 : 1/1</span>
+           </div>
         </div>
         <div className="copyright">ⓒseat-nullnull</div>
       </Mainborder>
