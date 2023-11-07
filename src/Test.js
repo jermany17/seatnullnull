@@ -22,24 +22,32 @@ const CustomTooltip = ({ active, payload, label }) => {
 const Test = () => {
   const [todaydata, settodayData] = useState(null); // 초기에는 data를 null로 초기화
   const [pastdata, setpastData] = useState(null); // 초기에는 data를 null로 초기화
-  const [webSocket, setWebSocket] = useState(null); //
-  const [message, setMessage] = useState('');       //
+  const [socket, setSocket] = useState(null);
   
   useEffect(() => {
     // 서버 주소 설정
     const serverUrl = 'http://www.seatnullnull.com:8080/api/pre';
     const serverUrl2 = 'http://www.seatnullnull.com:8080/api/past';
-    const webSocket = new WebSocket("ws://seatnullnull.com/ws/data");
     
-    // 웹 소켓 연결이 열릴 때 실행할 함수
-    webSocket.onopen = () => {
-      console.log('웹 소켓 연결이 열렸습니다.');
+    // 컴포넌트가 마운트될 때 WebSocket 연결을 엽니다.
+    const newSocket = new WebSocket("ws://seatnullnull.com:8080/ws/data");
+    setSocket(newSocket);
+    newSocket.onopen = () => {
+      console.log("connected");
     };
-    webSocket.onmessage = function(message){
-       setMessage(message.data);
+    newSocket.onclose = (error) => {
+      console.log("disconnect");
+      console.log(error);
     };
-    setWebSocket(webSocket);
-
+    newSocket.onerror = (error) => {
+      console.log("connection error");
+      console.log(error);
+    };
+    newSocket.onmessage = (event) => {
+      console.log("Data:", event.data);
+      const data = JSON.parse(event.data);
+      console.log("data:",data[0]);
+    };
     // Axios를 사용하여 GET 요청 보내기
     axios.get(serverUrl)
       .then(response => { // 서버 요청이 성공한 경우 실행된다 
@@ -77,7 +85,7 @@ const Test = () => {
         <div>
           <h3>서버에서 받은 데이터:</h3>
           <p>오늘의 날짜: {formattedDate}</p>
-          <p>소켓 데이터: {message}</p>
+          <p>소켓 데이터: </p>
           <pre>{JSON.stringify(todaydata, null, 1)}</pre>
           <pre>{JSON.stringify(pastdata, null, 1)}</pre>
           {/* 첫번째 인수는 데이터, 
