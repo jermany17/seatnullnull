@@ -290,13 +290,24 @@
 .electric{
   margin-right: 5px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   height: 17px;
   width: 100%;
 }
 .elec{
   font-size: 15px;
 }
+.electric2{
+  margin-right: 5px;
+  display: flex;
+  justify-content: center;
+  height: 17px;
+  width: 100%;
+}
+.elec2{
+  font-size: 15px;
+}
+
 
 
 /* 동방 */

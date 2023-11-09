@@ -44,8 +44,8 @@ const SeatMap2 = () => {
           </div>
           <div className="table21" style={{backgroundColor: tableBackgroundColor}}>
             {seat?.pp}/{c}    
-            <div className="electric">
-              <span class="material-symbols-outlined power elec">electrical_services</span>
+            <div className="electric2">
+              <span class="material-symbols-outlined power elec2">electrical_services</span>
             </div>
           </div>
           <div  className="addcolumn-seat21">  
