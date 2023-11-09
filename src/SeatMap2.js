@@ -39,9 +39,18 @@ const SeatMap2 = () => {
           <div  className="addcolumn-seat21">      
             <div className="seat21" style={{backgroundColor: tableBackgroundColor}}></div>
             <div className="seat21" style={{backgroundColor: tableBackgroundColor}}></div>
+            <div className="seat21" style={{backgroundColor: tableBackgroundColor}}></div>
+            <div className="seat21" style={{backgroundColor: tableBackgroundColor}}></div>
           </div>
-          <div className="table21" style={{backgroundColor: tableBackgroundColor}}>{seat?.pp}/{c}</div>
+          <div className="table21" style={{backgroundColor: tableBackgroundColor}}>
+            {seat?.pp}/{c}    
+            <div className="electric">
+              <span class="material-symbols-outlined power elec">electrical_services</span>
+            </div>
+          </div>
           <div  className="addcolumn-seat21">  
+            <div className="seat21" style={{backgroundColor: tableBackgroundColor}}></div>
+            <div className="seat21" style={{backgroundColor: tableBackgroundColor}}></div>
             <div className="seat21" style={{backgroundColor: tableBackgroundColor}}></div>
             <div className="seat21" style={{backgroundColor: tableBackgroundColor}}></div>
           </div>
@@ -54,10 +63,7 @@ return (
   <div>
     <div className="seat-container">
       <div className="seat-container-row21">
-        {madeseat21(0,4)}
-      </div>
-      <div className="electric">
-        <span class="material-symbols-outlined power elec">electrical_services</span>
+        {madeseat21(0,8)}
       </div>
     </div>
   </div>
