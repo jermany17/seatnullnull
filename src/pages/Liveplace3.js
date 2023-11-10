@@ -15,7 +15,16 @@ const Liveplace3 = () => {
           <div className="header-right"><Link to="/" className="header-logo-link"> <img src={home} alt="home" className="header-logo" /></Link></div>
         </div>
         <div className="place-container3">
-          <h1 className="lastweek">Comming Soon : D</h1>
+          <div className="textinfoma">
+            <div className="textinfo">
+              <h1 className="Textinfo">설명서(실시간 좌석 정보)</h1>
+              <span>aaaaaaa</span>
+              <span>bbbbbbbbb</span>
+              <span>ccccccccccc</span>
+              <span>ddddddddddddd</span>
+              <span>eeeeeeeeeeeeeee</span>
+            </div>
+          </div>
         </div>
         <div className="copyright">ⓒseat-nullnull</div>
       </Mainborder>

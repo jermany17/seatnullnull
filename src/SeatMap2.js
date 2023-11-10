@@ -39,8 +39,6 @@ const SeatMap2 = () => {
           <div  className="addcolumn-seat21">      
             <div className="seat21" style={{backgroundColor: tableBackgroundColor}}></div>
             <div className="seat21" style={{backgroundColor: tableBackgroundColor}}></div>
-            <div className="seat21" style={{backgroundColor: tableBackgroundColor}}></div>
-            <div className="seat21" style={{backgroundColor: tableBackgroundColor}}></div>
           </div>
           <div className="table21" style={{backgroundColor: tableBackgroundColor}}>
             {seat?.pp}/{c}    
@@ -49,8 +47,6 @@ const SeatMap2 = () => {
             </div>
           </div>
           <div  className="addcolumn-seat21">  
-            <div className="seat21" style={{backgroundColor: tableBackgroundColor}}></div>
-            <div className="seat21" style={{backgroundColor: tableBackgroundColor}}></div>
             <div className="seat21" style={{backgroundColor: tableBackgroundColor}}></div>
             <div className="seat21" style={{backgroundColor: tableBackgroundColor}}></div>
           </div>

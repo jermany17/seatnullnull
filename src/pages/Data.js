@@ -41,7 +41,8 @@ const Data = () => {
             <Link to="/data-place3" className="live-data-place">
               <img src={yellowfolder} alt="yellowfolder" className="image-container-place" />
               <div className='image-overlay'>
-               <span class="material-symbols-outlined">add</span>
+                <span class="material-symbols-outlined">menu_book</span>
+                <span>설명서(좌석 포화도 정보)</span>
               </div>
             </Link>
           </div>

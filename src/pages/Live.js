@@ -41,7 +41,8 @@ const Live = () => {
             <Link to="/live-place3" className="live-data-place">
               <img src={redfolder} alt="redfolder" className="image-container-place" />
               <div className='image-overlay'>
-                <span class="material-symbols-outlined">add</span>
+                <span class="material-symbols-outlined">menu_book</span>
+                <span>설명서(실시간 좌석 정보)</span>
               </div>
             </Link>
           </div>
