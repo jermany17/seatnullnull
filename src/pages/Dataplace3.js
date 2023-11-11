@@ -13,7 +13,7 @@ const Dataplace3 = () => {
       <Mainborder>
         <div className="header">
           <div className="header-left"><Link to="/data" className="header-logo-link"><img src={arrowback} alt="arrowback" className="header-logo" /></Link></div>
-          <div className="header-center"><span class="material-symbols-outlined">add</span></div>
+          <div className="header-center"><span class="material-symbols-outlined">menu_book</span></div>
           <div className="header-right"><Link to="/" className="header-logo-link"><img src={home} alt="home" className="header-logo" /></Link></div>
         </div>
         <div className="place-container3">
