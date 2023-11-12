@@ -64,7 +64,13 @@ const Liveplace2 = () => {
             <span className="seat-whe1">실시간 전체 포화도 : {Positive}/1</span>
            </div>
         </div>
-        <div className="copyright">ⓒseat-nullnull</div>
+        <div className="copyright">
+          <span>ⓒseat-nullnull</span>
+          <div className="Beta">
+            <span class="material-symbols-outlined beta">all_inclusive</span>
+            <span class="beta2">Beta</span>
+          </div>
+        </div>  
       </Mainborder>
     </div>
   )

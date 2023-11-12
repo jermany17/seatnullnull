@@ -26,7 +26,13 @@ const Home = () => {
               </div>
           </Link>
         </div>
-        <div className="copyright2">ⓒseat-nullnull</div>
+        <div className="copyright2">
+          <span>ⓒseat-nullnull</span>
+          <div className="Beta">
+            <span class="material-symbols-outlined beta">all_inclusive</span>
+            <span class="beta2">Beta</span>
+          </div>
+        </div>  
       </Mainborder>
     </div>
   )
