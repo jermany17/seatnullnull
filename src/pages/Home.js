@@ -14,7 +14,7 @@ const Home = () => {
           <Link to="/live" className="image-link">
               <img src={folder} alt="folder" className="image-container2" />
               <div className='image-overlay'>
-                <span class="material-symbols-outlined liveseat">airline_seat_legroom_extra</span>
+                <span className="material-symbols-outlined liveseat">airline_seat_legroom_extra</span>
                 <span className='font-style'>실시간 좌석 여부</span>
               </div>
           </Link>
@@ -29,8 +29,8 @@ const Home = () => {
         <div className="copyright2">
           <span>ⓒseat-nullnull</span>
           <div className="Beta">
-            <span class="material-symbols-outlined beta">all_inclusive</span>
-            <span class="beta2">Beta</span>
+            <span className="material-symbols-outlined beta">all_inclusive</span>
+            <span className="beta2">Beta</span>
           </div>
         </div>  
       </Mainborder>

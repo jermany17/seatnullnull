@@ -11,7 +11,7 @@ const Liveplace3 = () => {
       <Mainborder>
         <div className="header">
           <div className="header-left"><Link to="/live" className="header-logo-link"> <img src={arrowback} alt="arrowback" className="header-logo" /></Link></div>
-          <div className="header-center"><span class="material-symbols-outlined">menu_book</span></div>
+          <div className="header-center"><span className="material-symbols-outlined">menu_book</span></div>
           <div className="header-right"><Link to="/" className="header-logo-link"> <img src={home} alt="home" className="header-logo" /></Link></div>
         </div>
         <div className="place-container3">
@@ -29,8 +29,8 @@ const Liveplace3 = () => {
         <div className="copyright">
           <span>ⓒseat-nullnull</span>
           <div className="Beta">
-            <span class="material-symbols-outlined beta">all_inclusive</span>
-            <span class="beta2">Beta</span>
+            <span className="material-symbols-outlined beta">all_inclusive</span>
+            <span className="beta2">Beta</span>
           </div>
         </div>  
       </Mainborder>

@@ -43,7 +43,7 @@ const SeatMap2 = () => {
           <div className="table21" style={{backgroundColor: tableBackgroundColor}}>
             {seat?.pp}/{c}    
             <div className="electric2">
-              <span class="material-symbols-outlined power elec2">electrical_services</span>
+              <span className="material-symbols-outlined power elec2">electrical_services</span>
             </div>
           </div>
           <div  className="addcolumn-seat21">  

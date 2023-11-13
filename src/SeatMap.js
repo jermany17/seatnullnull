@@ -152,7 +152,7 @@ return (
         <div className="rightlongseat"></div>
       </div>
       <div className="electric">
-        <span class="material-symbols-outlined power elec">electrical_services</span>
+        <span className="material-symbols-outlined power elec">electrical_services</span>
         <div className="rightlongseat"></div>
       </div>
       <div className="bottom-gray"></div>

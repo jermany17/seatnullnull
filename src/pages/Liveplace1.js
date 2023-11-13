@@ -47,8 +47,8 @@ const Liveplace1 = () => {
         <div className="footer">
            <div className="liveinfo1">
             <span>시간 : 10:00 ~ 21:00</span>
-            <span className="seat-whe1">토론 가능 여부 :<span class="material-symbols-outlined talking">circle</span></span>
-            <span className="seat-whe1">콘센트 위치 :<span class="material-symbols-outlined power">electrical_services</span></span>
+            <span className="seat-whe1">토론 가능 여부 :<span className="material-symbols-outlined talking">circle</span></span>
+            <span className="seat-whe1">콘센트 위치 :<span className="material-symbols-outlined power">electrical_services</span></span>
            </div>
            <div className="liveinfo2">
             <span className="seat-whe1"><div className="seat-whe2"></div>가용 테이블</span>
@@ -59,8 +59,8 @@ const Liveplace1 = () => {
         <div className="copyright">
           <span>ⓒseat-nullnull</span>
           <div className="Beta">
-            <span class="material-symbols-outlined beta">all_inclusive</span>
-            <span class="beta2">Beta</span>
+            <span className="material-symbols-outlined beta">all_inclusive</span>
+            <span className="beta2">Beta</span>
           </div>
         </div>  
       </Mainborder>

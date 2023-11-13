@@ -41,7 +41,7 @@ const Data = () => {
             <Link to="/data-place3" className="live-data-place">
               <img src={yellowfolder} alt="yellowfolder" className="image-container-place" />
               <div className='image-overlay'>
-                <span class="material-symbols-outlined">menu_book</span>
+                <span className="material-symbols-outlined">menu_book</span>
                 <span>설명서(좌석 포화도 정보)</span>
               </div>
             </Link>
@@ -50,8 +50,8 @@ const Data = () => {
         <div className="copyright">
           <span>ⓒseat-nullnull</span>
           <div className="Beta">
-            <span class="material-symbols-outlined beta">all_inclusive</span>
-            <span class="beta2">Beta</span>
+            <span className="material-symbols-outlined beta">all_inclusive</span>
+            <span className="beta2">Beta</span>
           </div>
         </div>  
       </Mainborder>

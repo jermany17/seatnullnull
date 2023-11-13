@@ -175,8 +175,8 @@ const Dataplace2 = () => {
         <div className="copyright">
           <span>ⓒseat-nullnull</span>
           <div className="Beta">
-            <span class="material-symbols-outlined beta">all_inclusive</span>
-            <span class="beta2">Beta</span>
+            <span className="material-symbols-outlined beta">all_inclusive</span>
+            <span className="beta2">Beta</span>
           </div>
         </div>  
       </Mainborder>

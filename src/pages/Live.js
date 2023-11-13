@@ -41,7 +41,7 @@ const Live = () => {
             <Link to="/live-place3" className="live-data-place">
               <img src={redfolder} alt="redfolder" className="image-container-place" />
               <div className='image-overlay'>
-                <span class="material-symbols-outlined">menu_book</span>
+                <span className="material-symbols-outlined">menu_book</span>
                 <span>설명서(실시간 좌석 정보)</span>
               </div>
             </Link>
@@ -50,8 +50,8 @@ const Live = () => {
         <div className="copyright">
           <span>ⓒseat-nullnull</span>
           <div className="Beta">
-            <span class="material-symbols-outlined beta">all_inclusive</span>
-            <span class="beta2">Beta</span>
+            <span className="material-symbols-outlined beta">all_inclusive</span>
+            <span className="beta2">Beta</span>
           </div>
         </div>  
       </Mainborder>
