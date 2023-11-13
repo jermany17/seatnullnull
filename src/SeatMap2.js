@@ -32,7 +32,7 @@ const SeatMap2 = () => {
 
   const madeseat21 = (a,c) => {  //(좌석 테이블 좌석 가로로) 
     const seat = seats.find((seat) => seat.id === a);
-    const Positive = seat?.pp > 0 || seat?.st > 0;
+    const Positive = seat?.pp > 0; // 원래 seat?.pp > 0 || seat?.st > 0
     const tableBackgroundColor = Positive ? 'rgb(200, 2, 2)' : 'rgb(235, 216, 11)';
     return (
       <div className="made-seat21">
