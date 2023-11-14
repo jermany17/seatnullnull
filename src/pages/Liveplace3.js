@@ -23,8 +23,8 @@ const Liveplace3 = () => {
               <span className="cText">➰ 실시간 좌석 여부</span>
               <span className="ctext">① 가용 테이블은 노란색, 불가용 테이블은 빨간색으로 표시</span>
               <span className="ctext">② 테이블 위의 정보 = (불가용 좌석 수) / (전체 좌석 수)</span>
-              <span className="ctext">💡좌석 여부가 바뀌는데 20초 정도 딜레이가 생길 수 있습니다</span>
-              <span className="ctext">💡새로고침(F5)을 해주시면 더 빠르게 확인하실 수 있습니다 :)</span>
+              <span className="ctext">💡좌석 여부가 바뀌는데 20초정도 딜레이가 생길 수 있습니다</span>
+              <span className="ctext">💡새로고침(F5)을 하면 3초정도 후에 정보가 업데이트 됩니다 :)</span>
               <br/>
               <span className="cText">➰ 추가 제공 정보</span>
               <span className="ctext">① 이용 가능 시간</span>
@@ -32,7 +32,7 @@ const Liveplace3 = () => {
               <span className="ctext">③ 콘센트 위치</span>
               <span className="ctext">④ 실시간 전체 포화도 = (불가용 책상 수) / (전체 책상 수)</span>
               <br/>
-              <span className="cText">🚨 좌석 가용 여부 주의사항</span>
+              <span className="cText">🚨 좌석 가용 여부 참고사항</span>
               <span className="ctext">객체 탐지 기술로 분석한 좌석 가용 여부를 화면에 표시합니다</span>
               <span className="ctext">영상 촬영이 아닌, 순간 프레임을 통해 객체를 탐지하는데</span>
               <span className="ctext">순간 프레임은 저장되지 않으니 걱정하지 않으셔도 됩니다!</span>
