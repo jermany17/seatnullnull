@@ -26,7 +26,7 @@ const CustomTooltip = ({ active, payload, label }) => {
 };
 
 function calculateDateDifference(selectedDay, data) {
-  const currentDate = new Date("2023-09-14"); // 나중에 현재 날짜 불러올 때는  Date()로.
+  const currentDate = new Date("2023-11-29"); // 나중에 현재 날짜 불러올 때는  Date()로.
   const currentmonth = currentDate.getMonth() + 1;   // 월은 0부터 시작하므로 무조건 1을 더해줍니다.
   const currentday = currentDate.getDate();
 

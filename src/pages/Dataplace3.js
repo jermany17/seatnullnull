@@ -5,7 +5,7 @@ import './Mainborder.css'
 import './placecontainer.css'
 import arrowback from '../images/arrowback.PNG';
 import home from '../images/home.PNG';
-// import Test from '../Test';
+//import Test from '../Test';
 
 const Dataplace3 = () => {
   return (
