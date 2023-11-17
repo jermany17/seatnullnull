@@ -31,7 +31,7 @@ const Liveplace3 = () => {
               <span className="ctext">② 토론 가능 여부</span>
               <span className="ctext">③ 콘센트 위치</span>
               <span className="ctext">④ 실시간 전체 포화도 = (불가용 테이블 수) / (전체 테이블 수)</span>
-              <span className="ctext2">+ SAI 동아리방의 실시간 전체 포화도 = (불가용 좌석 수) / (전체 좌석 수)</span>
+              <span className="ctext2">💡SAI 동아리방의 실시간 전체 포화도 = (불가용 좌석 수) / (전체 좌석 수)</span>
               <br/>
               <span className="cText">🚨 좌석 가용 여부 참고사항</span>
               <span className="ctext">객체 탐지 기술로 분석한 좌석 가용 여부를 화면에 표시합니다</span>
