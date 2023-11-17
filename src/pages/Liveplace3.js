@@ -23,8 +23,8 @@ const Liveplace3 = () => {
               <span className="cText">➰ 실시간 좌석 여부</span>
               <span className="ctext">① 가용 테이블은 노란색, 불가용 테이블은 빨간색으로 표시</span>
               <span className="ctext">② 테이블 위의 정보 = (불가용 좌석 수) / (전체 좌석 수)</span>
-              <span className="ctext">💡좌석 여부가 바뀌는데 20초정도 딜레이가 생길 수 있습니다</span>
-              <span className="ctext">💡새로고침(F5)을 하면 3초정도 후에 정보가 업데이트 됩니다 :)</span>
+              <span className="ctext2">💡좌석 여부가 바뀌는데 20초정도 딜레이가 생길 수 있습니다</span>
+              <span className="ctext2">💡새로고침(F5)을 하면 3초정도 후에 정보가 업데이트 됩니다 :)</span>
               <br/>
               <span className="cText">➰ 추가 제공 정보</span>
               <span className="ctext">① 이용 가능 시간</span>

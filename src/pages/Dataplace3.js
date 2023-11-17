@@ -25,8 +25,8 @@ const Dataplace3 = () => {
               <span className="cText">➰ 최근 7일 시간별 평균 포화도</span>
               <span className="ctext">금일(현재 날짜)을 기준으로 최대 7일 전에 해당하는 날짜의</span>
               <span className="ctext">시간별 평균 포화도를 표시한 그래프입니다</span>
-              <span className="ctext">💡 1일 전 ~ 7일 전 중 원하는 날짜를 선택하면</span>
-              <span className="ctext">💡 해당 날짜의 시간별 평균 포화도를 확인하실 수 있습니다 :)</span>
+              <span className="ctext2">💡 1일 전 ~ 7일 전 중 원하는 날짜를 선택하면</span>
+              <span className="ctext2">💡 해당 날짜의 시간별 평균 포화도를 확인하실 수 있습니다 :)</span>
               <br/>
               <span className="cText">➰ 금일 예상 시간별 평균 포화도</span>
               <span className="ctext">과거 데이터를 이용해 ❗예측❗한</span>
