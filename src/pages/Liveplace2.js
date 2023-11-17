@@ -37,7 +37,7 @@ const Liveplace2 = () => {
   }, []);
 
   const seat = seats.find((seat) => seat.id === 0);
-  const Positive = (seat?.pp > 0 || seat?.st > 0) ? 1 : 0;
+  // const Positive = (seat?.pp > 0 || seat?.st > 0) ? 1 : 0;
 
   return (
     <div className="fullscreen">
@@ -61,7 +61,7 @@ const Liveplace2 = () => {
            <div className="liveinfo2">
             <span className="seat-whe1"><div className="seat-whe2"></div>가용 테이블</span>
             <span className="seat-whe1"><div className="seat-whe3"></div>불가용 테이블</span>
-            <span className="seat-whe1">실시간 전체 포화도 : {Positive}/1</span>
+            <span className="seat-whe1">실시간 전체 포화도 :  {seat?.pp}/8</span>
            </div>
         </div>
         <div className="copyright">
@@ -76,3 +76,4 @@ const Liveplace2 = () => {
   )
 }
 export default Liveplace2
+// 실시간 전체 포화도 : {Positive}/1 // 위에 const Positive도 주석해 놓음
