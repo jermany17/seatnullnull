@@ -3,7 +3,19 @@ import './SeatMap.css';
 const SeatMap2 = () => {
   const [socket, setSocket] = useState(null);
   const [seats, setSeats] = useState([
-    { id: 0, pp: 0, st: 0 },
+    { id: 0, pp: 0, st: 0, where: 0 },
+    { id: 1, pp: 0, st: 0, where: 1 },
+    { id: 2, pp: 0, st: 0, where: 1 },
+    { id: 3, pp: 0, st: 0, where: 1 },
+    { id: 4, pp: 0, st: 0, where: 1 },
+    { id: 5, pp: 0, st: 0, where: 1 },
+    { id: 6, pp: 0, st: 0, where: 1 },
+    { id: 7, pp: 0, st: 0, where: 1 },
+    { id: 8, pp: 0, st: 0, where: 1 },
+    { id: 9, pp: 0, st: 0, where: 1 },
+    { id: 10, pp: 0, st: 0, where: 1 },
+    { id: 11, pp: 0, st: 0, where: 1 },
+    { id: 12, pp: 0, st: 0, where: 1 },
   ]);
 
   useEffect(() => {
@@ -23,10 +35,18 @@ const SeatMap2 = () => {
       console.log(error);
     };
     newSocket.onmessage = (event) => {
-      console.log("Data:", event.data);
+      //console.log("Data:", event.data);
       const data = JSON.parse(event.data);
-      console.log("data:",data[0]);
-      setSeats([data[0]]);
+      //console.log("data:", data);
+      setSeats(prevSeats => {
+        const updatedSeats = prevSeats.map(one => {
+          const newSeat = data.find(news => news.id === one.id);
+          return newSeat || one;
+        });
+        //console.log("updatedSeats:", updatedSeats);
+        // setSeats(updatedSeats);
+        return updatedSeats;
+      });
     };
   }, []);
 

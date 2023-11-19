@@ -1,20 +1,54 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './SeatMap.css';
 const SeatMap = () => {
-  const [seats] = useState([
-    { id: 0, pp: 1, st: 0 },
-    { id: 1, pp: 0, st: 0 },
-    { id: 2, pp: 2, st: 0 },
-    { id: 3, pp: 3, st: 0 },
-    { id: 4, pp: 0, st: 0 },
-    { id: 5, pp: 4, st: 0 },
-    { id: 6, pp: 0, st: 0 },
-    { id: 7, pp: 2, st: 0 },
-    { id: 8, pp: 3, st: 0 },
-    { id: 9, pp: 0, st: 0 },
-    { id: 10, pp: 0, st: 0 },
-    { id: 11, pp: 6, st: 0 },
+  const [socket, setSocket] = useState(null);
+  const [seats, setSeats] = useState([
+    { id: 0, pp: 0, st: 0, where: 0 },
+    { id: 1, pp: 0, st: 0, where: 1 },
+    { id: 2, pp: 0, st: 0, where: 1 },
+    { id: 3, pp: 0, st: 0, where: 1 },
+    { id: 4, pp: 0, st: 0, where: 1 },
+    { id: 5, pp: 0, st: 0, where: 1 },
+    { id: 6, pp: 0, st: 0, where: 1 },
+    { id: 7, pp: 0, st: 0, where: 1 },
+    { id: 8, pp: 0, st: 0, where: 1 },
+    { id: 9, pp: 0, st: 0, where: 1 },
+    { id: 10, pp: 0, st: 0, where: 1 },
+    { id: 11, pp: 0, st: 0, where: 1 },
+    { id: 12, pp: 0, st: 0, where: 1 },
   ]);
+
+  useEffect(() => {
+
+    // 컴포넌트가 마운트될 때 WebSocket 연결을 엽니다.
+    const newSocket = new WebSocket("ws://seatnullnull.com:8080/ws/data");
+    setSocket(newSocket);
+    newSocket.onopen = () => {
+      console.log("connected");
+    };
+    newSocket.onclose = (error) => {
+      console.log("disconnect");
+      console.log(error);
+    };
+    newSocket.onerror = (error) => {
+      console.log("connection error");
+      console.log(error);
+    };
+    newSocket.onmessage = (event) => {
+      //console.log("Data:", event.data);
+      const data = JSON.parse(event.data);
+      //console.log("data:", data);
+      setSeats(prevSeats => {
+        const updatedSeats = prevSeats.map(one => {
+          const newSeat = data.find(news => news.id === one.id);
+          return newSeat || one;
+        });
+        //console.log("updatedSeats:", updatedSeats);
+        // setSeats(updatedSeats);
+        return updatedSeats;
+      });
+    };
+  }, []);
 
   const madeseat1 = (a, c) => {  //(좌석 테이블 좌석 가로로) 
     const seat = seats.find((seat) => seat.id === a);
@@ -119,16 +153,16 @@ return (
         <div className="white_nextto12"></div>
         <div className="gray_nextto12"><div className="g_n_12"></div><div className="g_n_12_2"></div></div>
         <div className="white_nextto12_2"></div>
-        {madeseat2(0,6)}
         {madeseat2(1,6)}
+        {madeseat2(2,6)}
         <div className="white_nextto12_2"></div>
         <div className="rightlongseat"></div>
       </div>
       <div className="seat-container-row">
-        {madeseat1(2,4)}
         {madeseat1(3,4)}
         {madeseat1(4,4)}
         {madeseat1(5,4)}
+        {madeseat1(6,4)}
         <div className="rightlongseat"></div>
       </div>
       <div className="seat-container-gray">
@@ -136,18 +170,18 @@ return (
         <div className="rightlongseat"></div>
       </div>
       <div className="seat-container-row">
-        {madeseat1(6,4)}
         {madeseat1(7,4)}
         {madeseat1(8,4)}
         {madeseat1(9,4)}
+        {madeseat1(10,4)}
         <div className="rightlongseat"></div>
       </div>
       <div className="seat-container-row">
         <div className="white_nextto12"></div>
         <div className="gray_nextto12"><div className="g_n_12"></div><div className="g_n_12_2"></div></div>
         <div className="white_nextto12_2"></div>
-        {madeseat2(10,6)}
         {madeseat2(11,6)}
+        {madeseat2(12,6)}
         <div className="white_nextto12_2"></div>
         <div className="rightlongseat"></div>
       </div>
