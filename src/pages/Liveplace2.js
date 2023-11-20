@@ -9,19 +9,19 @@ import SeatMap2 from '../SeatMap2';
 const Liveplace2 = () => {
   const [socket, setSocket] = useState(null);
   const [seats, setSeats] = useState([
-    { id: 0, pp: 0, st: 0, where: 0 },
-    { id: 1, pp: 0, st: 0, where: 1 },
-    { id: 2, pp: 0, st: 0, where: 1 },
-    { id: 3, pp: 0, st: 0, where: 1 },
-    { id: 4, pp: 0, st: 0, where: 1 },
-    { id: 5, pp: 0, st: 0, where: 1 },
-    { id: 6, pp: 0, st: 0, where: 1 },
-    { id: 7, pp: 0, st: 0, where: 1 },
-    { id: 8, pp: 0, st: 0, where: 1 },
-    { id: 9, pp: 0, st: 0, where: 1 },
-    { id: 10, pp: 0, st: 0, where: 1 },
-    { id: 11, pp: 0, st: 0, where: 1 },
-    { id: 12, pp: 0, st: 0, where: 1 },
+    { id: 0, pp: 0, st: false, where: 0 },
+    { id: 1, pp: 0, st: false, where: 1 },
+    { id: 2, pp: 0, st: false, where: 1 },
+    { id: 3, pp: 0, st: false, where: 1 },
+    { id: 4, pp: 0, st: false, where: 1 },
+    { id: 5, pp: 0, st: false, where: 1 },
+    { id: 6, pp: 0, st: false, where: 1 },
+    { id: 7, pp: 0, st: false, where: 1 },
+    { id: 8, pp: 0, st: false, where: 1 },
+    { id: 9, pp: 0, st: false, where: 1 },
+    { id: 10, pp: 0, st: false, where: 1 },
+    { id: 11, pp: 0, st: false, where: 1 },
+    { id: 12, pp: 0, st: false, where: 1 },
   ]);
 
   useEffect(() => {
@@ -41,15 +41,15 @@ const Liveplace2 = () => {
       console.log(error);
     };
     newSocket.onmessage = (event) => {
-      console.log("Data:", event.data);
+      //console.log("Data:", event.data);
       const data = JSON.parse(event.data);
-      console.log("data:", data);
+      //console.log("data:", data);
       setSeats(prevSeats => {
         const updatedSeats = prevSeats.map(one => {
           const newSeat = data.find(news => news.id === one.id);
           return newSeat || one;
         });
-        console.log("updatedSeats:", updatedSeats);
+        //console.log("updatedSeats:", updatedSeats);
         // setSeats(updatedSeats);
         return updatedSeats;
       });
@@ -74,7 +74,7 @@ const Liveplace2 = () => {
         </div>
         <div className="footer">
            <div className="liveinfo1">
-            <span>시간 : 10:00 ~ 21:00</span>
+            <span>시간 : 9:00 ~ 22:00</span>
             <span className="seat-whe1">토론 가능 여부 :<span className="material-symbols-outlined talking">circle</span></span>
             <span className="seat-whe1">콘센트 위치 :<span className="material-symbols-outlined power">electrical_services</span></span>
            </div>

@@ -9,19 +9,19 @@ import SeatMap from '../SeatMap';
 const Liveplace1 = () => {
   const [socket, setSocket] = useState(null);
   const [seats, setSeats] = useState([
-    { id: 0, pp: 0, st: 0, where: 0 },
-    { id: 1, pp: 0, st: 0, where: 1 },
-    { id: 2, pp: 0, st: 0, where: 1 },
-    { id: 3, pp: 0, st: 0, where: 1 },
-    { id: 4, pp: 0, st: 0, where: 1 },
-    { id: 5, pp: 0, st: 0, where: 1 },
-    { id: 6, pp: 0, st: 0, where: 1 },
-    { id: 7, pp: 0, st: 0, where: 1 },
-    { id: 8, pp: 0, st: 0, where: 1 },
-    { id: 9, pp: 0, st: 0, where: 1 },
-    { id: 10, pp: 0, st: 0, where: 1 },
-    { id: 11, pp: 0, st: 0, where: 1 },
-    { id: 12, pp: 0, st: 0, where: 1 },
+    { id: 0, pp: 0, st: false, where: 0 },
+    { id: 1, pp: 0, st: false, where: 1 },
+    { id: 2, pp: 0, st: false, where: 1 },
+    { id: 3, pp: 0, st: false, where: 1 },
+    { id: 4, pp: 0, st: false, where: 1 },
+    { id: 5, pp: 0, st: false, where: 1 },
+    { id: 6, pp: 0, st: false, where: 1 },
+    { id: 7, pp: 0, st: false, where: 1 },
+    { id: 8, pp: 0, st: false, where: 1 },
+    { id: 9, pp: 0, st: false, where: 1 },
+    { id: 10, pp: 0, st: false, where: 1 },
+    { id: 11, pp: 0, st: false, where: 1 },
+    { id: 12, pp: 0, st: false, where: 1 },
   ]);
 
   useEffect(() => {
@@ -58,7 +58,7 @@ const Liveplace1 = () => {
 
   const positiveValues = [];
 
-  for (let i = 0; i <= 11; i++) {
+  for (let i = 1; i <= 12; i++) {
     const seat = seats.find((seat) => seat.id === i);
     const positive = (seat?.pp > 0 || seat?.st > 0) ? 1 : 0;
     positiveValues.push(positive);
@@ -80,7 +80,7 @@ const Liveplace1 = () => {
         </div>
         <div className="footer">
            <div className="liveinfo1">
-            <span>시간 : 10:00 ~ 21:00</span>
+            <span>시간 : 9:00 ~ 22:00</span>
             <span className="seat-whe1">토론 가능 여부 :<span className="material-symbols-outlined talking">circle</span></span>
             <span className="seat-whe1">콘센트 위치 :<span className="material-symbols-outlined power">electrical_services</span></span>
            </div>
