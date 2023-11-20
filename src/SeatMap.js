@@ -169,6 +169,13 @@ return (
         <div className="all-space"><span>공용 공간</span></div>
         <div className="rightlongseat"></div>
       </div>
+      {/*나중에 삭제*/} 
+      <div className="seat-container-row">
+        <div className="all-space2"><span class="material-symbols-outlined">construction</span><span>내부 수리중</span><span class="material-symbols-outlined">construction</span></div>
+        <div className="rightlongseat"></div>
+      </div>
+      {/*나중에 삭제*/} 
+      {/*
       <div className="seat-container-row">
         {madeseat1(1,4)}
         {madeseat1(2,4)}
@@ -185,6 +192,7 @@ return (
         <div className="white_nextto12_2"></div>
         <div className="rightlongseat"></div>
       </div>
+      */}
       <div className="electric">
         <span className="material-symbols-outlined power elec">electrical_services</span>
         <div className="rightlongseat"></div>
