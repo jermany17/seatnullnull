@@ -3,19 +3,19 @@ import './SeatMap.css';
 const SeatMap2 = () => {
   const [socket, setSocket] = useState(null);
   const [seats, setSeats] = useState([
-    { id: 0, pp: 0, st: false, where: 0 },
-    { id: 1, pp: 0, st: false, where: 1 },
-    { id: 2, pp: 0, st: false, where: 1 },
-    { id: 3, pp: 0, st: false, where: 1 },
-    { id: 4, pp: 0, st: false, where: 1 },
-    { id: 5, pp: 0, st: false, where: 1 },
-    { id: 6, pp: 0, st: false, where: 1 },
-    { id: 7, pp: 0, st: false, where: 1 },
-    { id: 8, pp: 0, st: false, where: 1 },
-    { id: 9, pp: 0, st: false, where: 1 },
-    { id: 10, pp: 0, st: false, where: 1 },
-    { id: 11, pp: 0, st: false, where: 1 },
-    { id: 12, pp: 0, st: false, where: 1 },
+    { id: 0, pp: 0, st: 0, where: 0 },
+    { id: 1, pp: 0, st: 0, where: 0 },
+    { id: 2, pp: 0, st: 0, where: 0 },
+    { id: 3, pp: 0, st: 0, where: 0 },
+    { id: 4, pp: 0, st: 0, where: 0 },
+    { id: 5, pp: 0, st: 0, where: 0 },
+    { id: 6, pp: 0, st: 0, where: 0 },
+    { id: 7, pp: 0, st: 0, where: 1 },
+    { id: 8, pp: 0, st: 0, where: 1 },
+    { id: 9, pp: 0, st: 0, where: 1 },
+    { id: 10, pp: 0, st: 0, where: 1 },
+    { id: 11, pp: 0, st: 0, where: 1 },
+    { id: 12, pp: 0, st: 0, where: 1 },
   ]);
 
   useEffect(() => {
