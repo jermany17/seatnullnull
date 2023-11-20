@@ -171,7 +171,7 @@ return (
       </div>
       {/*나중에 삭제*/} 
       <div className="seat-container-row">
-        <div className="all-space2"><span class="material-symbols-outlined">construction</span><span>내부 수리중</span><span class="material-symbols-outlined">construction</span></div>
+        <div className="all-space2"><span className="material-symbols-outlined">construction</span><span>내부 수리중</span><span className="material-symbols-outlined">construction</span></div>
         <div className="rightlongseat"></div>
       </div>
       {/*나중에 삭제*/} 
