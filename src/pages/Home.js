@@ -5,17 +5,8 @@ import './Home.css'
 import './Mainborder.css'
 import main from '../images/main.PNG';
 import folder from '../images/folder.PNG';
-import ReactAnalytics from 'react-analytics';
 
 const Home = () => {
-
-  useEffect(() => {
-    // 초기화
-    ReactAnalytics.initialize('G-G2T92F45SY');
-    // 페이지 로드마다 이벤트 전송
-    ReactAnalytics.pageview(window.location.pathname + window.location.search);
-  }, []);
-
   return (
     <div className="fullscreen">
       <Mainborder>
