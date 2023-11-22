@@ -5,16 +5,16 @@ import './Home.css'
 import './Mainborder.css'
 import main from '../images/main.PNG';
 import folder from '../images/folder.PNG';
-import ReactGA from 'react-analytics';
+import ReactAnalytics from 'react-analytics';
 
 const Home = () => {
 
   useEffect(() => {
     // 초기화
-    ReactGA.initialize('G-G2T92F45SY');
+    ReactAnalytics.initialize('G-G2T92F45SY');
     // 페이지 로드마다 이벤트 전송
-    ReactGA.pageview(window.location.pathname + window.location.search);
-  }, []); // 빈 배열은 컴포넌트 마운트 시 한 번만 실행하도록 함
+    ReactAnalytics.pageview(window.location.pathname + window.location.search);
+  }, []);
 
   return (
     <div className="fullscreen">
