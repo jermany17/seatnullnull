@@ -9,6 +9,7 @@ import Data from './pages/Data';
 import Dataplace1 from "./pages/Dataplace1";
 import Dataplace2 from "./pages/Dataplace2";
 import Dataplace3 from "./pages/Dataplace3";
+import ReactGA from 'react-ga';
 function App() {
   return (
       <Routes>
