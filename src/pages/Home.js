@@ -5,8 +5,7 @@ import './Home.css'
 import './Mainborder.css'
 import main from '../images/main.PNG';
 import folder from '../images/folder.PNG';
-
-import ReactGA from 'react-ga';
+import ReactGA from 'react-analytics';
 
 const Home = () => {
 
