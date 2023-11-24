@@ -54,13 +54,16 @@ const SeatMap = () => {
     const seat = seats.find((seat) => seat.id === a);
     const Positive = seat?.pp > 0 || seat?.st > 0;
     const tableBackgroundColor = Positive ? 'rgb(200, 2, 2)' : 'rgb(235, 216, 11)';
+
+    const displayValue = seat?.pp > c ? c : seat?.pp;
+
     return (
       <div className="made-seat1">
           <div  className="addcolumn-seat">      
             <div className="seat" style={{backgroundColor: tableBackgroundColor }}></div>
             <div className="seat" style={{backgroundColor: tableBackgroundColor }}></div>
           </div>
-          <div className="table1" style={{backgroundColor: tableBackgroundColor }}>{seat?.pp}/{c}</div>
+          <div className="table1" style={{backgroundColor: tableBackgroundColor }}>{displayValue}/{c}</div>
           <div  className="addcolumn-seat">  
             <div className="seat" style={{backgroundColor: tableBackgroundColor }}></div>
             <div className="seat" style={{backgroundColor: tableBackgroundColor }}></div>
@@ -72,6 +75,9 @@ const SeatMap = () => {
     const seat = seats.find((seat) => seat.id === a);
     const Positive = seat?.pp > 0 || seat?.st > 0;
     const tableBackgroundColor = Positive ? 'rgb(200, 2, 2)' : 'rgb(235, 216, 11)';
+    
+    const displayValue = seat?.pp > c ? c : seat?.pp;
+
     return (
        <div className="made-seat2">
           <div  className="addrow-seat">      
@@ -79,7 +85,7 @@ const SeatMap = () => {
             <div className="seat" style={{backgroundColor: tableBackgroundColor }}></div>
             <div className="seat" style={{backgroundColor: tableBackgroundColor }}></div>
           </div>
-          <div className="table2" style={{backgroundColor: tableBackgroundColor }}>{seat?.pp}/{c}</div>
+          <div className="table2" style={{backgroundColor: tableBackgroundColor }}>{displayValue}/{c}</div>
           <div  className="addrow-seat">  
             <div className="seat" style={{backgroundColor: tableBackgroundColor }}></div>
             <div className="seat" style={{backgroundColor: tableBackgroundColor }}></div>
