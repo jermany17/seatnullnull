@@ -14,6 +14,8 @@ const SeatMap = () => {
     { id: 8, pp: 0, st: 0, where: 1 },
     { id: 9, pp: 0, st: 0, where: 1 },
     { id: 10, pp: 0, st: 0, where: 1 },
+    { id: 11, pp: 0, st: 0, where: 1 },
+    { id: 12, pp: 0, st: 0, where: 1 },
   ]);
 
   useEffect(() => {
@@ -173,15 +175,15 @@ return (
         <div className="white_nextto12"></div>
         <div className="gray_nextto12"><div className="g_n_12"></div><div className="g_n_12_2"></div></div>
         <div className="white_nextto12_2"></div>
-        {madeseat2(10,12)}
+        {madeseat2(11,12)}
         <div className="white_nextto12_2"></div>
         <div className="rightlongseat"></div>
       </div>
       <div className="seat-container-row">
-        {madeseat1(6,4)}
         {madeseat1(7,4)}
         {madeseat1(8,4)}
         {madeseat1(9,4)}
+        {madeseat1(10,4)}
         <div className="rightlongseat"></div>
       </div>
       <div className="seat-container-gray">
