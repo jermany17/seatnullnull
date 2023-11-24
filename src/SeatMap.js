@@ -9,7 +9,7 @@ const SeatMap = () => {
     { id: 3, pp: 0, st: 0, where: 0 },
     { id: 4, pp: 0, st: 0, where: 0 },
     { id: 5, pp: 0, st: 0, where: 0 },
-    { id: 6, pp: 0, st: 0, where: 1 },
+    { id: 6, pp: 0, st: 0, where: 0 },
     { id: 7, pp: 0, st: 0, where: 1 },
     { id: 8, pp: 0, st: 0, where: 1 },
     { id: 9, pp: 0, st: 0, where: 1 },
