@@ -87,7 +87,7 @@ const Liveplace1 = () => {
            <div className="liveinfo2">
             <span className="seat-whe1"><div className="seat-whe2"></div>가용 테이블</span>
             <span className="seat-whe1"><div className="seat-whe3"></div>불가용 테이블</span>
-            <span className="seat-whe1">실시간 전체 포화도 : {totalPositive}/12</span>
+            <span className="seat-whe1">실시간 전체 포화도 : {totalPositive}/10</span>
            </div>
         </div>
         <div className="footer2">
