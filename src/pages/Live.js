@@ -32,7 +32,7 @@ const Live = () => {
                 <span>학술정보원 창의토론라운지(4층)</span>
               </div>
             </Link>
-            <Link to="/live-place2" className="live-data-place">
+            <Link className="live-data-place">
               <img src={redfolder} alt="redfolder" className="image-container-place" />
               <div className='image-overlay'>
                 <span>SAI 동아리방</span>
