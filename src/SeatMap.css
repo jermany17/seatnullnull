@@ -170,6 +170,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   font-size: 15px;
   border-radius: 5px;
 }
@@ -195,6 +196,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   font-size: 15px;
   border-radius: 5px;
 }
@@ -301,11 +303,11 @@
   margin-right: 5px;
   display: flex;
   justify-content: center;
-  height: 17px;
+  height: 13px;
   width: 100%;
 }
 .elec2{
-  font-size: 15px;
+  font-size: 10px;
 }
 
 

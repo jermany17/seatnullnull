@@ -63,7 +63,12 @@ const SeatMap = () => {
             <div className="seat" style={{backgroundColor: tableBackgroundColor }}></div>
             <div className="seat" style={{backgroundColor: tableBackgroundColor }}></div>
           </div>
-          <div className="table1" style={{backgroundColor: tableBackgroundColor }}>{displayValue}/{c}</div>
+          <div className="table1" style={{backgroundColor: tableBackgroundColor }}>
+            {displayValue}/{c}
+            <div className="electric2">
+              <span className="material-symbols-outlined power elec2">electrical_services</span>
+            </div> 
+          </div>
           <div  className="addcolumn-seat">  
             <div className="seat" style={{backgroundColor: tableBackgroundColor }}></div>
             <div className="seat" style={{backgroundColor: tableBackgroundColor }}></div>
@@ -85,7 +90,12 @@ const SeatMap = () => {
             <div className="seat" style={{backgroundColor: tableBackgroundColor }}></div>
             <div className="seat" style={{backgroundColor: tableBackgroundColor }}></div>
           </div>
-          <div className="table2" style={{backgroundColor: tableBackgroundColor }}>{displayValue}/{c}</div>
+          <div className="table2" style={{backgroundColor: tableBackgroundColor }}>
+            {displayValue}/{c}
+            <div className="electric2">
+              <span className="material-symbols-outlined power elec2">electrical_services</span>
+            </div> 
+          </div>
           <div  className="addrow-seat">  
             <div className="seat" style={{backgroundColor: tableBackgroundColor }}></div>
             <div className="seat" style={{backgroundColor: tableBackgroundColor }}></div>
@@ -195,10 +205,6 @@ return (
         {madeseat2(5,6)}
         {madeseat2(6,6)}
         <div className="white_nextto12_2"></div>
-        <div className="rightlongseat"></div>
-      </div>
-      <div className="electric">
-        <span className="material-symbols-outlined power elec">electrical_services</span>
         <div className="rightlongseat"></div>
       </div>
       <div className="bottom-gray"></div>
