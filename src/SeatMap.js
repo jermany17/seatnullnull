@@ -9,13 +9,11 @@ const SeatMap = () => {
     { id: 3, pp: 0, st: 0, where: 0 },
     { id: 4, pp: 0, st: 0, where: 0 },
     { id: 5, pp: 0, st: 0, where: 0 },
-    { id: 6, pp: 0, st: 0, where: 0 },
+    { id: 6, pp: 0, st: 0, where: 1 },
     { id: 7, pp: 0, st: 0, where: 1 },
     { id: 8, pp: 0, st: 0, where: 1 },
     { id: 9, pp: 0, st: 0, where: 1 },
     { id: 10, pp: 0, st: 0, where: 1 },
-    { id: 11, pp: 0, st: 0, where: 1 },
-    { id: 12, pp: 0, st: 0, where: 1 },
   ]);
 
   useEffect(() => {
@@ -89,6 +87,9 @@ const SeatMap = () => {
             <div className="seat" style={{backgroundColor: tableBackgroundColor }}></div>
             <div className="seat" style={{backgroundColor: tableBackgroundColor }}></div>
             <div className="seat" style={{backgroundColor: tableBackgroundColor }}></div>
+            <div className="seat" style={{backgroundColor: tableBackgroundColor }}></div>
+            <div className="seat" style={{backgroundColor: tableBackgroundColor }}></div>
+            <div className="seat" style={{backgroundColor: tableBackgroundColor }}></div>
           </div>
           <div className="table2" style={{backgroundColor: tableBackgroundColor }}>
             {displayValue}/{c}
@@ -97,6 +98,9 @@ const SeatMap = () => {
             </div> 
           </div>
           <div  className="addrow-seat">  
+            <div className="seat" style={{backgroundColor: tableBackgroundColor }}></div>
+            <div className="seat" style={{backgroundColor: tableBackgroundColor }}></div>
+            <div className="seat" style={{backgroundColor: tableBackgroundColor }}></div>
             <div className="seat" style={{backgroundColor: tableBackgroundColor }}></div>
             <div className="seat" style={{backgroundColor: tableBackgroundColor }}></div>
             <div className="seat" style={{backgroundColor: tableBackgroundColor }}></div>
@@ -169,16 +173,15 @@ return (
         <div className="white_nextto12"></div>
         <div className="gray_nextto12"><div className="g_n_12"></div><div className="g_n_12_2"></div></div>
         <div className="white_nextto12_2"></div>
-        {madeseat2(7,6)}
-        {madeseat2(8,6)}
+        {madeseat2(10,12)}
         <div className="white_nextto12_2"></div>
         <div className="rightlongseat"></div>
       </div>
       <div className="seat-container-row">
+        {madeseat1(6,4)}
+        {madeseat1(7,4)}
+        {madeseat1(8,4)}
         {madeseat1(9,4)}
-        {madeseat1(10,4)}
-        {madeseat1(11,4)}
-        {madeseat1(12,4)}
         <div className="rightlongseat"></div>
       </div>
       <div className="seat-container-gray">
@@ -202,8 +205,7 @@ return (
         <div className="white_nextto12"></div>
         <div className="gray_nextto12"><div className="g_n_12"></div><div className="g_n_12_2"></div></div>
         <div className="white_nextto12_2"></div>
-        {madeseat2(5,6)}
-        {madeseat2(6,6)}
+        {madeseat2(5,12)}
         <div className="white_nextto12_2"></div>
         <div className="rightlongseat"></div>
       </div>
