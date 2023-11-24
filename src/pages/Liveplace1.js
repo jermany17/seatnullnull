@@ -90,6 +90,14 @@ const Liveplace1 = () => {
             <span className="seat-whe1">실시간 전체 포화도 : {totalPositive}/12</span>
            </div>
         </div>
+        <div className="footer2">
+             <span className="footer2text">➰ Beta 테스트 중입니다. 참고만 해주세요 :) ➰</span>
+             {/*
+             <span className="footer2text">💡 가끔 카메라가 꺼지거나 출력값에 오류가 있을 수 있습니다</span>
+             <span className="footer2text">🚨 모든 테이블이 가용 테이블로 표시되고 있다면</span>
+             <span className="footer2text">💡 오류가 나고 있는 상태로 이해해주시면 감사하겠습니다 :)</span>
+            */}
+        </div>
         <div className="copyright">
           <span>ⓒseat-nullnull</span>
           <div className="Beta">

@@ -84,6 +84,7 @@ const Liveplace2 = () => {
             <span className="seat-whe1">실시간 전체 포화도 :  {seat?.pp}/8</span>
            </div>
         </div>
+        <div className="footer2"></div>
         <div className="copyright">
           <span>ⓒseat-nullnull</span>
           <div className="Beta">
