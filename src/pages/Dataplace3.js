@@ -36,7 +36,6 @@ const Dataplace3 = () => {
               <span className="ctext">현재 표시되는 데이터는 임의의 값으로</span>
               <span className="ctext">계속해서 예측에 필요한 데이터를 모으는 중입니다 !</span>
               <span className="ctext">데이터가 모이는대로 빠르게 포화도 정보를 제공해드리겠습니다 :)</span>
-              <span className="ctext">(코로나 19 체온 탐지와 유사)</span>
             </div>
           </div>
         </div>
