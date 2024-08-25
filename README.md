@@ -1,7 +1,7 @@
 SEAT NULL NULL
 학생들에게 교내 학습 공간에 대한 포화도 및 포화도 예측 결과를 제공한다
 
-<img src="https://github.com/user-attachments/assets/9231c833-1389-46ce-8e9a-04f67739b05b" alt="KakaoTalk Image" width="200" height="350" />
+<img src="https://github.com/user-attachments/assets/9231c833-1389-46ce-8e9a-04f67739b05b" width="200" height="350" />
 
 <img src="https://github.com/user-attachments/assets/bfbfd7af-830a-4767-8711-e8df149477a4" width="200" height="350" />
 
