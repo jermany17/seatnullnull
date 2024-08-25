@@ -15,5 +15,5 @@ SEAT NULL NULL
 
 <br>
 
-<img src="https://github.com/user-attachments/assets/2ad4ac81-b7b9-40b4-bf99-f2ce63f6e251" width="600" height="350" />
+<img src="https://github.com/user-attachments/assets/2ad4ac81-b7b9-40b4-bf99-f2ce63f6e251" width="700" height="350" />
 
