@@ -5,6 +5,7 @@
 
 ### 사용 언어
 React
+---
 
 - 메인 화면
 <img src="https://github.com/user-attachments/assets/9231c833-1389-46ce-8e9a-04f67739b05b" width="200" height="350" />
