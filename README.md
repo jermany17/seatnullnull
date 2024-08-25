@@ -1,6 +1,10 @@
 # SEAT NULL NULL
+
 ### 프로젝트 설명
 학생들에게 교내 학습 공간에 대한 포화도 및 포화도 예측 결과를 제공
+
+### 사용 언어
+React
 
 - 메인 화면
 <img src="https://github.com/user-attachments/assets/9231c833-1389-46ce-8e9a-04f67739b05b" width="200" height="350" />
