@@ -13,6 +13,7 @@ React
 
 <br>
 <br>
+<br>
 
 - 장소 선택 화면(실시간, 포화도)
 <img src="https://github.com/user-attachments/assets/bfbfd7af-830a-4767-8711-e8df149477a4" width="200" height="350" />
@@ -21,16 +22,19 @@ React
 
 <br>
 <br>
+<br>
 
 - 실시간 좌석 정보 화면
 <img src="https://github.com/user-attachments/assets/d89adb25-7564-4fb2-bcc1-d127ef96934e" width="200" height="350" />
 
 <br>
 <br>
+<br>
 
 - 좌석 포화도 정보 화면
 <img src="https://github.com/user-attachments/assets/9ac96d6f-b769-4190-b06f-38b17a5b47fc" width="200" height="350" />
 
+<br>
 <br>
 <br>
 
