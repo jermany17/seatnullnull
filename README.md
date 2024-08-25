@@ -9,9 +9,9 @@ SEAT NULL NULL
 
 <br>
 
-<img src="https://github.com/user-attachments/assets/d89adb25-7564-4fb2-bcc1-d127ef96934e" alt="KakaoTalk Image 1" width="200" height="350" />
+<img src="https://github.com/user-attachments/assets/d89adb25-7564-4fb2-bcc1-d127ef96934e" width="200" height="350" />
 
-<img src="https://github.com/user-attachments/assets/9ac96d6f-b769-4190-b06f-38b17a5b47fc" alt="KakaoTalk Image 2" width="200" height="350" />
+<img src="https://github.com/user-attachments/assets/9ac96d6f-b769-4190-b06f-38b17a5b47fc" width="200" height="350" />
 
 <br>
 
