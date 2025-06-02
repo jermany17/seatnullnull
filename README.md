@@ -9,7 +9,9 @@ Frontend
 React  
 
 ### 구현 기능  
-메인 화면 & 장소 선택 화면, 실시간 좌석 정보 제공 화면, 예측 포화도 정보 제공 화면
+- 메인 화면 & 장소 선택 화면
+- 실시간 좌석 정보 제공 화면
+- 예측 포화도 정보 제공 화면
 
 ### 상세 페이지  
 [Notion 링크](https://www.notion.so/SEAT-NULL-NULL-AI-1c83ca3e4c0d80ef961cf5c8b1659a37?source=copy_link)
